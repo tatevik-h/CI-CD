@@ -14,8 +14,9 @@ jobs:
        steps:
         - name: Print messages
           run: |
-             mkdir workspaces    
-             cd workspaces	     
+             mkdir workspaces
+	     cd workspaces	     
+             ls -la
         - name: Run script
           run: |
              ls -la 
