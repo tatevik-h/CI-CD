@@ -14,8 +14,7 @@ jobs:
        steps:
         - name: Print messages
           run: |
-              echo "Hello World!"
-              dir
+             pwd     
         - name: Run script
           run: |
               python3 logic.py
