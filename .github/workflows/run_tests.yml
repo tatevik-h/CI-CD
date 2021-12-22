@@ -17,6 +17,7 @@ jobs:
              mkdir workspaces
              cd workspaces	     
              ls -la
+             pwd	     
         - name: Run script
           run: |
              ls -la 
