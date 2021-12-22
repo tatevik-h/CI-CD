@@ -11,7 +11,7 @@ jobs:
 
                 python-version: [3.7, 3.8]
 
-        steps:
+       steps:
         - name: Checking out code from the repository
           uses: actions/checkout@v2
 
