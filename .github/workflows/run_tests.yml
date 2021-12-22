@@ -14,7 +14,7 @@ jobs:
        steps:
         - name: Print messages
           run: |
-             ls -la     
+             mkdir workspaces && cd workspaces     
         - name: Run script
           run: |
-              python3 logic.py
+              pwd
