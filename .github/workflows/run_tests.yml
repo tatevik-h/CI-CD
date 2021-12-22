@@ -25,3 +25,9 @@ jobs:
              ls -la 
              pwd
              python3 logic.py
+             mkdir aaa
+
+        - name: Check run
+          run: |
+              pwd
+              ls -la
