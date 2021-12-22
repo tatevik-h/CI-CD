@@ -9,12 +9,13 @@ jobs:
        strategy:
             matrix:
         
-                python-version: [3.7, 3.8]
+                python-version: [3.7]
 
        steps:
         - name: Print messages
           run: |
               echo "Hello World!"
+              echo pwd
         - name: Run script
           run: |
               python3 logic.py
