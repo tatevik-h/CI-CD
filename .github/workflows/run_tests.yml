@@ -3,7 +3,7 @@ name: Run unit tests with Python
 on: [push]
 
 jobs:
-   buils:
+   build:
        runs-on: ubuntu-latest
 
        strategy:
