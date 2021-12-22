@@ -12,7 +12,6 @@ jobs:
                 python-version: [3.7]
 
        steps:
-        - uses: actions/checkout@v2
         - name: Print messages
           run: |
              echo "Cleaning up previous run"             
@@ -20,6 +19,8 @@ jobs:
              mkdir -p "${{ github.workspace }}"
              pwd	     
              ls -la ../	     
+        - uses: actions/checkout@v2
         - name: Run script
           run: |
              ls -la 
+             pwd
