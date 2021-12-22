@@ -19,7 +19,7 @@ jobs:
              rm -rf "${{ github.workspace }}"	     
              mkdir -p "${{ github.workspace }}"
              pwd	     
-             ls -la	     
+             ls -la ../	     
         - name: Run script
           run: |
              ls -la 
