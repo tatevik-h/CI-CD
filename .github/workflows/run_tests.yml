@@ -14,10 +14,11 @@ jobs:
        steps:
         - name: Print messages
           run: |
-             mkdir workspaces
-             cd workspaces	     
-             ls -la
+             echo "Cleaning up previous run"             
+             rm -rf "${{ github.workspace }}"	     
+             mkdir -p "${{ github.workspace }}"
              pwd	     
+             ls -la	     
         - name: Run script
           run: |
              ls -la 
