@@ -1,0 +1,23 @@
+name: Run unit tests with Python
+
+on: [push]
+
+jobs:
+    buils:
+        runs-on: ubuntu-latest
+
+	strategy:
+	    matrix:
+
+	        python-version: [3.7, 3.8]
+
+        steps:
+	- name: Checking out code from the repository
+          uses: actions/checkout@v2
+
+        - name: Setting up Python ${{ matrix.python-version }}
+	  uses: actions/setup-python@2
+	  with:
+	  	python-version: ${{ matrix.python-version }}
+        - name: Print messages
+	      echo "Hello World!"
