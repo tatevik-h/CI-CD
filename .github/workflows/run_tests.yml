@@ -18,7 +18,7 @@ jobs:
         - name: Check run
           run: |
               pwd
-              ls -la
+              ls 
    test:
        needs: build
        runs-on: ubuntu-latest
