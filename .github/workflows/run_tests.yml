@@ -3,18 +3,11 @@ name: Run unit tests with Python
 on: [push]
 
 jobs:
-   build:
+  - uses: actions/checkout@v2
+    build:
        runs-on: ubuntu-latest
 
        steps:
-        - name: Print messages
-          run: |
-             echo "Cleaning up previous run"             
-             rm -rf "${{ github.workspace }}"	     
-             mkdir -p "${{ github.workspace }}"
-             pwd	     
-             ls -la ../	     
-        - uses: actions/checkout@v2
         - name: Run script
           run: |
              ls -la 
@@ -31,7 +24,6 @@ jobs:
        runs-on: ubuntu-latest
 
        steps:
-          - uses: actions/checkout@v2
           - name: aaaaa
             run: | 
               echo "aaaaa"
