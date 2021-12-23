@@ -27,11 +27,12 @@ jobs:
               pwd
               ls -la
    test:
+       needs: build
        runs-on: ubuntu-latest
 
        steps:
           - name: aaaaa
-            run: 
+            run: | 
               echo "aaaaa"
               ls -la
               pwd
