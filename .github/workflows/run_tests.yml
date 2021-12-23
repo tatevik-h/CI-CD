@@ -27,7 +27,7 @@ jobs:
               pwd
               ls -la
    test:
-       runs_on: ubuntu-latest
+       runs-on: ubuntu-latest
 
        steps:
           - name: aaaaa
