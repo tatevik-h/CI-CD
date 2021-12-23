@@ -8,8 +8,6 @@ jobs:
 
        steps:
         - uses: actions/checkout@v2
-          with:
-             name: artifact
         - name: Run script
           run: |
              ls -la 
@@ -25,7 +23,7 @@ jobs:
         runs-on: ubuntu-latest
 
         steps:
-           - uses: actions/upload-artifact@v2
+           - uses: actions/download-artifact@v2
            - name: aaaaa
              run: | 
                echo "aaaaa"
