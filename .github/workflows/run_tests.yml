@@ -16,20 +16,19 @@ jobs:
              mkdir -p aaa
 
         - name: Check run
-          run: |
+          run: 
               pwd
-              ls 
-   test:
-       needs: build
-       runs-on: ubuntu-latest
+    test:
+        needs: build
+        runs-on: ubuntu-latest
 
-       steps:
-          - uses: actions/checkout@v2
-            with:
-              repository: Airbnb
-          - name: aaaaa
-            run: | 
-              echo "aaaaa"
-              ls -la
-              pwd
+        steps:
+           - uses: actions/checkout@v2
+             with:
+               repository: Airbnb
+           - name: aaaaa
+             run: | 
+               echo "aaaaa"
+               ls -la
+               pwd
 
